@@ -6,7 +6,7 @@ var userRoutes = require('./routes/user');
 var formRoutes = require('./routes/form');
 
 var app = express();
-mongoose.connect('mongodb://mohamad:password123#@ds157819.mlab.com:57819/restapi_deployement');
+mongoose.connect('localhost:27017/restapi_auth_crud_mongodb');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
